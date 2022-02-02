@@ -49,3 +49,27 @@
   justify-content: center;
   margin:10px;
 }
+.instructions{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width:50%;
+  margin:30px;
+  margin-left: 350px;
+  border: solid 2px;
+  border-color: rgb(48, 131, 131);
+}
+
+.order-form {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  margin-top:20px;
+  border:solid 2px;
+  margin-left:370px;
+  width: 50%;
+  border-color:rgb(48, 131, 131) ;
+}
