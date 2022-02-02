@@ -6,6 +6,7 @@ import { useState } from 'react';
 
 import AddName from './order-name';
 import FoodDropDown from './FoodDropdown';
+import SidesDropDown from './SidesDropdown';
 import DrinkDropDown from './DrinkDropdown';
 import InstructionForm from './InstructionForm';
 
@@ -15,6 +16,7 @@ function App() {
   const [instructions, addInstructions] = useState(['Add Your Special Requests...']);
   const [drinkId, setDrinkId] = useState(1);
   const [foodId, setFoodId] = useState(1);
+  const [sidesId, setSidesId] = useState(1);
 
 
 
@@ -37,8 +39,7 @@ function App() {
         <InstructionForm addInstructions={addInstructions} instructions={instructions}/>
         <FoodDropDown setFoodId={setFoodId} />
         <DrinkDropDown setDrinkId={setDrinkId} />
-        
-        
+        <SidesDropDown setSidesId={setSidesId} />
 
       </div>
     </div>
