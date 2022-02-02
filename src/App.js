@@ -10,7 +10,7 @@ import InstructionForm from './InstructionForm';
 function App() {
 
   const [orderName, addOrderName] = useState('Add Your Name Here');
-  const [instructions, addInstructions] = useState('Add Your Special Requests');
+  const [instructions, addInstructions] = useState(['Add Your Special Requests']);
 
 
 
@@ -18,6 +18,15 @@ function App() {
     <div className="App">
       <div>
         <h2>Food Order for...{orderName}</h2>
+
+        <ul className='instructions'>
+          {
+            instructions.map((instruction, i) => <li key={`${instruction}-${i}`}>
+              {instruction}
+            </li>)
+          }
+        </ul>
+
       </div>
       <div className='order-form'>
         <AddName addOrderName={addOrderName} />
