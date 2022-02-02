@@ -1,13 +1,19 @@
 
 import './App.css';
+
 import react from 'react';
 import { useState } from 'react';
 
 import AddName from './order-name';
+import InstructionForm from './InstructionForm';
 
 function App() {
 
   const [orderName, addOrderName] = useState('Add Your Name Here');
+  const [instructions, addInstructions] = useState('Add Your Special Requests');
+
+
+
   return (
     <div className="App">
       <div>
@@ -15,6 +21,7 @@ function App() {
       </div>
       <div className='order-form'>
         <AddName addOrderName={addOrderName} />
+        <InstructionForm addInstructions={addInstructions} instructions={instructions}/>
 
       </div>
     </div>
