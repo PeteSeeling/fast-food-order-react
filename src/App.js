@@ -1,7 +1,5 @@
 
 import './App.css';
-
-import react from 'react';
 import { useState } from 'react';
 
 import AddName from './order-name';
@@ -9,6 +7,7 @@ import FoodDropDown from './FoodDropdown';
 import SidesDropDown from './SidesDropdown';
 import DrinkDropDown from './DrinkDropdown';
 import InstructionForm from './InstructionForm';
+import FoodPhotos from './FoodPhotos';
 
 function App() {
 
@@ -19,11 +18,14 @@ function App() {
   const [sidesId, setSidesId] = useState(1);
 
 
-
   return (
     <div className="App">
       <div>
         <h2>Food Order for...{orderName}</h2>
+        <FoodPhotos
+          foodId={foodId}
+          sidesId={sidesId}
+          drinkId={drinkId} />
 
         <ul className='instructions'>
           {
