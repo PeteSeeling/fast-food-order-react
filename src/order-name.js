@@ -1,4 +1,4 @@
-import react from 'react';
+
 
 export default function AddName({ addOrderName }) {
   function handleChange(e) {
