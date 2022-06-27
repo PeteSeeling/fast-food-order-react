@@ -4,6 +4,7 @@ export default function FoodDropDown({ setFoodId }) {
   function handleChange(e) {
     setFoodId(e.target.value);
   }
+  
   return (
     <div>
             What to Eat?
